@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: brown;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 786px) {
+  body {
+    grid-template-columns: 50%;
+  }
+}
+
+.additem-container {
+  background: cornflowerblue;
+  text-align: center;
+}
+
+.displayitem-container {
+  background: lightgreen;
+}
+
+.additem-container,
+.displayitem-container {
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  box-shadow: 0 5px 10px white;
+}
+
+.add-items {
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  display: none;
+}
+
+.display-items {
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  display: none;
+}
+.additem {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.input-item {
+  width: 100%;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.submit {
+  font-size: 20px;
+  padding: 0.5rem;
+  width: 50%;
+  border: black 2px solid;
+  cursor: pointer;
+  justify-content: center;
+}
+.submit:hover {
+  background: black;
+  color: blanchedalmond;
+}
+
+.clear {
+  font-size: 20px;
+  padding: 0.5rem;
+  width: 50%;
+  border: black 2px solid;
+  cursor: pointer;
+  justify-content: center;
+  margin-left: 6.5rem;
+}
+
+.Grocery-items {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+.Grocery-items:hover {
+  background: white;
+}
+
+.items {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.green {
+  color: red;
+  display: block;
+}
+
+.alert {
+  color: red;
+  border-color: red;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.success {
+  color: green;
+  border-color: green;
+  margin-bottom: 0.5rem;
+  display: block;
+}
